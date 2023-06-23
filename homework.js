@@ -98,3 +98,24 @@ console.log(priceuptopwear);
 // [ 32190, 49000, 55000, 59000 ] 이렇게만 나오넹..!
 
 // 적용시키는건 내일 도전 ..!
+
+//--------다시 도전 ------------
+
+const topwearup = topwear.map(
+  (element) =>
+    `[${element.id}, ${element.name}, ${element.brand}, ${element.gender}, ${
+      element.price + 10000
+    }]`
+);
+
+console.log(topwearup);
+
+// 다같이 불러오고 싶으면 맵안에 ${}를 써서 요소를 하나하나씩 추가하면 다 뜬다 !! 까먹지 말자!!
+
+// '[MMATE407,  릴렉스 핏 크루 넥 반팔 티셔츠 2팩, MUSINSA_STANDARD, men,\n  32190]',
+// '[CO2302STE1BK, 에센셜 쿨 코튼 2-PACK 티셔츠 블랙, COVERNAT, unisex,\n  59000]',
+// '[TRTOASURS12UC5, 미시간 울버린 피그먼트 반팔티 블랙 차콜, TRAVEL, men,\n  49000]',
+// '[1MG23STS102, W CLASSIC LOGO TEE white, MARITHE FRANCOIS GIRBAUD, women,\n' +
+//   '  55000]',
+// '[MG2DMMT505APK,  [무료반품] DON’T PANIC PIGMENT TEE PINK(MG2DMMT505A), MAHAGRID, unisex,\n' +
+//   '  59000]'
